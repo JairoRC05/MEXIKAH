@@ -36,12 +36,17 @@
 }
 
 
-h2 {
-    line-height: 1.8em;
+h2,
+h3 {
+    line-height: 1.2em;
 }
 
 p {
     line-height: 1.5em;
+}
+
+.f-35 {
+    font-size: 35px;
 }
 
 
@@ -99,30 +104,6 @@ a {
     text-decoration: underline;
 }
 
-@media (max-width: 1024px) {
-    .hide {
-        display: none;
-    }
-}
-
-
-@media (max-width: 992px) {
-    .mont {
-        font-size: 1em;
-    }
-
-    .exo {
-        font-size: 22px;
-    }
-}
-
-
-.f-35 {
-    font-size: 35px;
-}
-
-
-
 @media (min-width: 1980px) {
 
     .container,
@@ -142,4 +123,22 @@ a {
         font-size: 45px;
     }
 
+}
+
+
+@media (max-width: 1024px) {
+    .hide {
+        display: none;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .mont {
+        font-size: 1em;
+    }
+
+    .exo {
+        font-size: 22px;
+    }
 }

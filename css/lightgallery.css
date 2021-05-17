@@ -1211,7 +1211,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .gallery-main a {
-  height: 310px;
+  height: auto;
   width: 520px;
   margin: 10px;
   border-radius: 5px;
@@ -1255,4 +1255,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .gallery a img:hover {
   transform: scale(1.4);
+}
+
+
+@media (max-width: 1024px) {
+  .gallery-main a {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-main a {
+    width: 40%;
+    margin: 4px
+  }
 }
