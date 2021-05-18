@@ -23,7 +23,7 @@
 }
 
 .exo {
-    font-size: 35px;
+    font-size: 32px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
 }
@@ -32,7 +32,7 @@
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 19.5px;
 }
 
 
@@ -87,6 +87,10 @@ article p {
     text-align: left;
 }
 
+article img {
+    border-radius: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -106,22 +110,18 @@ a {
 
 @media (min-width: 1980px) {
 
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
+    .container {
         max-width: 1620px;
     }
 
 
-    .mont {
+    /* .mont {
         font-size: 40px;
     }
 
     .exo {
         font-size: 45px;
-    }
+    } */
 
 }
 
