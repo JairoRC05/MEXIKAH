@@ -23,16 +23,17 @@
 }
 
 .exo {
-    font-size: 32px;
+    font-size: 30px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
 }
 
-.mont {
+p {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: 400;
-    font-size: 19.5px;
+    font-size: 19px;
+    line-height: 1.5em;
 }
 
 
@@ -41,9 +42,6 @@ h3 {
     line-height: 1.2em;
 }
 
-p {
-    line-height: 1.5em;
-}
 
 .f-35 {
     font-size: 35px;
@@ -94,10 +92,18 @@ article img {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-size: inherit;
     font-weight: inherit;
+    text-transform: uppercase;
 }
+
+
+.sub {
+    text-transform: none;
+}
+
 
 
 header h3 {
@@ -106,6 +112,24 @@ header h3 {
 
 a {
     text-decoration: underline;
+}
+
+
+.container {
+    width: 70%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.container-fluid {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (min-width: 1980px) {
@@ -134,11 +158,44 @@ a {
 
 
 @media (max-width: 992px) {
-    .mont {
+    p {
         font-size: 1em;
     }
 
     .exo {
         font-size: 22px;
     }
+}
+
+@media (max-width: 768px) {
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+}
+
+
+footer,
+li a {
+    text-decoration: none;
+}
+
+
+.characters h3 {
+    text-transform: inherit;
+}
+
+.news h3 {
+    text-transform: inherit;
+}
+
+.news p {
+    font-size: 12px;
 }

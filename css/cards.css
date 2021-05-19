@@ -56,7 +56,8 @@
         sans-serif;
     font-weight: 700;
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
+    text-transform: inherit;
     text-shadow: 0px 2px 2px rgb(187, 228, 8);
 }
 
