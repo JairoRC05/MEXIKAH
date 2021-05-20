@@ -1266,7 +1266,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 @media (max-width: 576px) {
   .gallery-main a {
-    width: 40%;
-    margin: 4px
+    width: 100%;
+    margin-bottom: 14px
   }
 }
