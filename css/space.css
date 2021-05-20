@@ -24,32 +24,32 @@
 .bg-stars-one {
     background: url('../images/Universo/StarBack.png') repeat top center,
         linear-gradient(to bottom, #483a29, #403325, #392d21);
-    background-size: 100px;
+    background-size: cover;
 
 }
 
 .bg-stars-two {
     z-index: 0;
     background: #392d21 url('../images/Universo/StarBack.png') repeat top center;
-    background-size: 100px;
+    background-size: cover;
 }
 
 
 .bg-stars-three {
     background: url('../images/Universo/StarBack.png') repeat top center, linear-gradient(to bottom, #392d21, #392d21, #2d221a, #201813, #140d08);
-    background-size: 100px;
+    background-size: cover;
 }
 
 .bg-stars-four {
     background: url('../images/Universo/StarBack.png') repeat top center,
         linear-gradient(180deg, rgba(20, 13, 8, 1) 0%, rgba(20, 13, 8, 1) 0%, rgba(9, 13, 24, 1) 100%, rgba(0, 0, 0, 1) 574731%);
-    background-size: 100px;
+    background-size: cover;
 }
 
 .bg-stars-five {
     background: url('../images/Universo/StarBack.png') repeat top center,
         linear-gradient(180deg, rgba(20, 13, 8, 1) 0%, rgba(9, 13, 24, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 1) 574731%);
-    background-size: 100px;
+    background-size: cover;
 }
 
 .stars2 {
@@ -126,38 +126,38 @@
 
 .bg-black-s {
     background: #000 url('../images/Universo/StarBack.png') repeat top center;
-    background-size: 100px;
+    background-size: cover;
 
 }
 
 .bg-darker {
     background: url('../images/Universo/StarBack.png') repeat top center,
         linear-gradient(to bottom, #000000, #150208, #200411, #290519, #330320);
-    background-size: 100px;
+    background-size: cover;
 }
 
 .bg-rose {
     background: url('../images/Universo/StarBack.png') repeat top center,
         linear-gradient(to bottom, #330320, #310223, #2e0126, #2b0029, #27002c);
-    background-size: 100px;
+    background-size: cover;
 }
 
 .bg-blues {
     background: url('../images/Universo/StarBack.png') repeat top center,
         linear-gradient(to bottom, #27002c, #240031, #1e0037, #14003d, #000044);
-    background-size: 100px;
+    background-size: cover;
 }
 
 .bg-sky {
     background: url('../images/Universo/StarBack.png') repeat top center,
         linear-gradient(to bottom, #000044, #001553, #002562, #00356f, #00457c, #5b6d9b);
-    background-size: 100px;
+    background-size: cover;
 }
 
 .bg-sky2 {
     background: url('../images/Universo/StarBack.png') repeat top center,
         linear-gradient(to bottom, #5b6d9b, #959abb, #cbcbdc, #ffffff);
-    background-size: 100px;
+    background-size: cover;
 }
 
 .bg-temple {

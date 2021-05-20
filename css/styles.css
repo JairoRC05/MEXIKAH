@@ -20,11 +20,13 @@
 
 * {
     transition: all .4s linear;
+
+    font-family: 'Exo 2',
+        sans-serif;
 }
 
 .exo {
     font-size: 30px;
-    font-family: 'Exo 2', sans-serif;
     font-weight: 700;
 }
 
