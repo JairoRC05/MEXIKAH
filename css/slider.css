@@ -10,11 +10,12 @@
 }
 
 .carousel-caption {
-    top: 30%;
+    top: 20%;
     transform: translateY(-50%);
     bottom: initial;
-
 }
+
+
 
 .carousel-caption h5 {
     font-size: 45px;

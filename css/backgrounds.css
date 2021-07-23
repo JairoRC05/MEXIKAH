@@ -225,6 +225,11 @@
         background-attachment: fixed;
 
     }
+
+    .carousel-caption img {
+        width: 60%;
+    }
+
 }
 
 
@@ -232,16 +237,26 @@
 
 @media (max-width: 1024px) {
     .parallax {
-        background: url(../images/Banner/PortadaIPAD.png) center center no-repeat;
+        background: url(../images/Banner/PortadaIPADnologo.png) center center no-repeat;
         background-size: cover;
         position: relative;
     }
+
+
+
+    .carousel-caption img {
+        width: 100%;
+    }
+
+
 }
 
 @media (max-width: 760px) {
     .parallax {
-        background: url(../images/Banner/PortadaPhone.png) center center no-repeat;
+        background: url(../images/Banner/PortadaPhonenologo.png) center center no-repeat;
         background-size: cover;
         position: relative;
     }
+
+
 }

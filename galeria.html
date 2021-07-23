@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>INICIO | MEXIKAH</title>
+    <title>GALERÍA | MEXIKAH</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"
         rel="stylesheet" id="bootstrap-css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <!-- <link rel="icon" href="images/Tfavicon.ico" /> -->
+    <link rel="icon" href="images/Favicon/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css">
     <!------ Include the above in your HEAD tag ---------->
 
@@ -61,25 +61,46 @@
                 <hr class="line-neon">
             </header>
 
+            <!-- fotos -->
             <div class="gallery" id="lightgallery" data-aos="fade-up" data-aos-duration="3000">
 
-                <a href="images/Noticias/FullBanner.jpg">
-                    <img src="images/Noticias/FullBanner.jpg">
+                <a href="images/galeria/CAPTURA1.png">
+                    <img src="images/galeria/CAPTURA1.png">
                 </a>
-                <a href="images/Noticias/GamePic2.jpg">
-                    <img src="images/Noticias/GamePic2.jpg">
+                <a href="images/galeria/CAPTURA2.png">
+                    <img src="images/galeria/CAPTURA2.png">
                 </a>
-                <a href="images/Noticias/GamePic5.jpg">
-                    <img src="images/Noticias/GamePic5.jpg">
+                <a href="images/galeria/CAPTURA3.png">
+                    <img src="images/galeria/CAPTURA3.png">
                 </a>
-                <a href="images/Noticias/GamePic3.jpg">
-                    <img src="images/Noticias/GamePic3.jpg">
+                <a href="images/galeria/CAPTURA4.png">
+                    <img src="images/galeria/CAPTURA4.png">
+                </a>
+                <a href="images/galeria//CAPTURA5.png">
+                    <img src="images/galeria/CAPTURA5.png">
                 </a>
 
             </div>
 
+            <!-- videos -->
+
+
+
+
         </article>
     </section>
+
+
+    <div id="gallery-videos-demo">
+        <!-- YouTube Video --->
+        <a data-lg-size="1280-720" data-src="//www.youtube.com/watch?v=egyIeygdS_E"
+            data-poster="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg"
+            data-sub-html="<h4>Visual Soundscapes - Mountains | Planet Earth II | BBC America</h4><p>On the heels of Planet Earth II’s record-breaking Emmy nominations, BBC America presents stunning visual soundscapes from the series' amazing habitats.</p>">
+            <img width="300" height="400" class="img-responsive"
+                src="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg" />
+        </a>
+
+    </div>
 
     <footer class="site-footer">
         <div class="container">
@@ -175,6 +196,9 @@
             progressBar: true
 
         });
+
+
+        lightGallery(document.getElementById('gallery-videos-demo'));
     </script>
 
 
