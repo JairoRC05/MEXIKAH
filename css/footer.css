@@ -145,6 +145,10 @@
     background-color: #3b5998
 }
 
+.social-icons a.youtube:hover {
+    background-color: red
+}
+
 .social-icons a.twitter:hover {
     background-color: #00aced
 }
