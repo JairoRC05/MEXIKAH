@@ -156,12 +156,13 @@
 
 .bg-sky2 {
     background: url('../images/Universo/StarBack.png') repeat top center,
-        linear-gradient(to bottom, #5b6d9b, #959abb, #cbcbdc, #ffffff);
+        linear-gradient(to bottom, #5b6d9b, #6589b1, #76a6c4, #8ec1d6, #acdde7);
     background-size: contain;
 }
 
 .bg-temple {
     background-image: url('../images/Universo/BottomImage.png');
+    background-color: #acdde7;
     background-size: cover;
     /* Usamos cover para que nuestra imagen no se deforme al adaptarse a cada pantalla */
     background-position: center;
