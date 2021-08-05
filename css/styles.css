@@ -240,12 +240,7 @@ li a {
 }
 
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    color: #000;
-    background-color: #f3f3b8;
-}
-
-.nav-pills .nav-link {
-    color: #fff;
+.not-active {
+    pointer-events: none;
+    cursor: not-allowed;
 }

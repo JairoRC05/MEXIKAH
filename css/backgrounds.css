@@ -232,6 +232,13 @@
 
 }
 
+@media (max-width: 1366px) {
+    .parallax {
+        background: url(../images/Banner/FullBanner.jpg) center center no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+}
 
 
 
@@ -241,8 +248,6 @@
         background-size: cover;
         position: relative;
     }
-
-
 
     .carousel-caption img {
         width: 100%;
