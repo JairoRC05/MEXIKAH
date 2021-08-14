@@ -187,3 +187,8 @@
     /* Para que no repita la imagen */
     height: 700px;
 }
+
+
+.bg-templo {
+    background-color: #acdde7;
+}

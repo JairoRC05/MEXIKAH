@@ -212,7 +212,6 @@
 
 .parallax::before {
     content: '';
-
     position: absolute;
     top: 0;
     right: 0;
@@ -223,11 +222,11 @@
 @media (min-width: 1024px) {
     .parallax {
         background-attachment: fixed;
-
     }
 
     .carousel-caption img {
         width: 60%;
+
     }
 
 }
@@ -256,12 +255,15 @@
 
 }
 
-@media (max-width: 760px) {
+
+
+
+
+@media (max-width: 768px) {
     .parallax {
         background: url(../images/Banner/PortadaPhonenologo.png) center center no-repeat;
         background-size: cover;
         position: relative;
     }
-
 
 }
