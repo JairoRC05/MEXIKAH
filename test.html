@@ -24,33 +24,7 @@
 
         gtag('config', 'G-HPBQ56H5EM');
     </script>
-    <script>
-        ! function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
 
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1243498386166502');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=1243498386166502&ev=PageView&noscript=1" />
-    </noscript>
-    
-    <!-- End Fa-->
 
 </head>
 
@@ -98,53 +72,26 @@
 
     <section class="bg-stars-one area-lg">
         <!-- stores -->
-        <article class="container">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <a target="_blank" class="hvr-wobble-horizontal"
-                        href="https://play.google.com/store/apps/details?id=com.BucefaloGames.AztecasGame">
-                        <img alt="Play Store" class="img-fluid" data-aos="fade-up"
-                            src="images/resdeSociales/BotonAndroid.png" loading="lazy">
-                    </a>
-                </div>
-                <div class="col-12 col-md-3">
-                    <a href="https://apps.apple.com/us/app/mexikah/id1515144317" target="_blank" class="hvr-wobble-horizontal">
-                        <img alt="Apple Store" class="img-fluid" data-aos="fade-up"
-                            src="images/resdeSociales/botonApple.png" loading="lazy">
-                    </a>
-                </div>
-                <div class="col-12 col-md-3">
-                    <a href="https://appgallery.cloud.huawei.com/ag/n/app/C104650439?locale=es_US&source=appshare&subsource=C104650439"
-                        target="_blank" class="hvr-wobble-horizontal">
-                        <img alt="Huawei Store" class="img-fluid" data-aos="fade-up"
-                            src="images/resdeSociales/botonHuawei.png" loading="lazy">
-                    </a>
-                </div>
-                <div class="col-12 col-md-3">
-                    <a class="hvr-wobble-horizontal" href="archivos/MexikahPressKit.zip" download>
-                        <img alt="Presskit" class="img-fluid" data-aos="fade-up"
-                            src="images/resdeSociales/BotonPressKit.png" loading="lazy">
-                    </a>
-                </div>
-            </div>
-        </article>
+
+
+        <article class="container" id="clock" data-aos="fade-up"></article>
 
         <!--versions  -->
         <article class="container justify-content-center area-lg">
-            <header class="neon-1 exo">
-                <h3 data-aos="zoom-up">Capítulo II: ESPLENDOR <br>¡DISPONIBLE EL 20 DE ENERO! </h3>
+            <header class="neon exo">
+                <h3 data-aos="zoom-up">Capítulo I: Amanecer <br> ¡DISPONIBLE EL 20 DE AGOSTO!</h3>
                 <!-- <h3 data-aos="zoom-up">Capítulo 1: Amanecer <br> ¡Ya disponible!</h3> -->
             </header>
 
             <div>
                 <img alt="Versiones" class="img-fluid area d-md-block d-none w-100 p-5"
-                    src="images/index/mapa-versiones.gif" data-tilt data-aos="zoom-in" loading="lazy">
+                    src="images/index/MapaVersionesAnim.gif" data-tilt data-aos="zoom-in" loading="lazy">
                 <img alt="Versiones" class="img-fluid area d-md-none d-block p-5" src="images/index/Chapter1Coin.png"
                     data-tilt data-aos="zoom-in" loading="lazy">
             </div>
 
-            <footer class="neon-2 exo">
-                <h4 data-aos="zoom-in">CAPÍTULO III: OCASO <br> PRÓXIMAMENTE</h4>
+            <footer class="neon-1 exo">
+                <h4 data-aos="zoom-in">CAPÍTULO II: ESPLENDOR <br> PRÓXIMAMENTE</h4>
 
                 <img alt="Versiones" class="img-fluid area d-md-none d-block p-5" src="images/index/Chapter2Coin.png"
                     data-tilt data-aos="zoom-in" loading="lazy">
@@ -451,8 +398,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                <p class="copyright-text">&copy; 2021 Bucefalo Games | <a href="aviso-de-privacidad.html">Aviso de privacidad</a></p>
+                    <p class="copyright-text">&copy; 2021 Bucefalo Games
 
+                    </p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -503,6 +451,100 @@
             progressBar: true
 
         });
+
+
+        const getRemainTime = deadline => {
+            let now = new Date(),
+                remainTime = (new Date(deadline) - now + 1000) / 1000,
+                remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2),
+                remainMinutes = ('0' + Math.floor(remainTime / 60 % 60)).slice(-2),
+                remainHours = ('0' + Math.floor(remainTime / 3600 % 24)).slice(-2),
+                remainDays = Math.floor(remainTime / (3600 * 24));
+
+            return {
+                remainTime,
+                remainSeconds,
+                remainMinutes,
+                remainHours,
+                remainDays
+            }
+
+        };
+
+        // console.log(getRemainTime('Aug 18 2021 23:37:00 GMT-0500'));
+
+        const countDown = (deadline, elem, mensaje) => {
+            const text = document.getElementById(elem);
+
+            const timerUpdate = setInterval(() => {
+                let time = getRemainTime(deadline);
+                text.innerHTML =
+                    ` <header class="neon exo">
+                        <hr class="line-neon">
+                        <h3 class="sub hvr-pulse-grow">
+                          ${time.remainHours}:${time.remainMinutes}:${time.remainSeconds}
+                        </h3>
+                        <hr class="line-neon">
+                    </header>
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <a target="" class="not-active" href="">
+                                <img alt="Play Store" class="img-fluid" src="images/resdeSociales/BotonAndroidOPACA.png" loading="lazy"></a></div>
+                        <div class="col-12 col-md-3">
+                            <a href="" target="" class="not-active"><img alt="Apple Store"
+                                    class="img-fluid" src="images/resdeSociales/botonAppleOPACA.png"
+                                    loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a href="" target="" class="not-active">
+                                <img alt="Huawei Store" class="img-fluid" src="images/resdeSociales/botonHuaweiOPACA.png" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <a class="hvr-wobble-horizontal" href="archivos/MexikahPressKit.zip" download>
+                                <img alt="Presskit" class="img-fluid" src="images/resdeSociales/BotonPressKit.png" loading="lazy">
+                                </a>
+                        </div>
+                    </div>
+                    `;
+
+                if (time.remainTime <= 1) {
+                    clearInterval(timerUpdate);
+                    text.innerHTML = mensaje;
+                }
+            }, 1000)
+        }
+        countDown('Aug 19 2021 15:50:00 GMT-0500', 'clock', `<header class="neon exo">
+            <hr class="line-neon">
+            <h3 class="sub animate__animated animate__flash animate__slow animate__infinite">
+                ¡DESCARGA AHORA!
+            </h3>
+            <hr class="line-neon">
+        </header>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <a target="_blank" href="" class="hvr-wobble-horizontal">
+                    <img alt="Play Store" class="img-fluid" src="images/resdeSociales/BotonAndroid.png"
+                        loading="lazy"></a>
+            </div>
+            <div class="col-12 col-md-3">
+                <a class="hvr-wobble-horizontal" href="" target="_blank">
+                    <img alt="Apple Store" class="img-fluid" src="images/resdeSociales/botonApple.png" loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-md-3">
+                <a href="" target="" class="not-active">
+                    <img alt="Huawei Store" class="img-fluid" src="images/resdeSociales/botonHuaweiPROXIMA.png"
+                        loading="lazy">
+                </a>
+            </div>
+            <div class="col-12 col-md-3">
+                <a class="hvr-wobble-horizontal" href="archivos/MexikahPressKit.zip" download>
+                    <img alt="Presskit" class="img-fluid" src="images/resdeSociales/BotonPressKit.png" loading="lazy">
+                </a>
+            </div>
+        </div>`)
     </script>
 
     <script src="js/tilt.jquery.js"> </script>
@@ -522,6 +564,6 @@
 
 
 
-    </body>
+</body>
 
 </html>

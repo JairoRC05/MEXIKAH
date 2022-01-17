@@ -30,13 +30,14 @@
     font-weight: 700;
 }
 
-p {
+p, .mont {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: 400;
     font-size: 19px;
     line-height: 1.5em;
 }
+
 
 
 h2,
